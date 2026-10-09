@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101e49">
+  <meta name="description" content="Muldash Erzhan — мой маленький цифровой мир. Синяя пиксельная вселенная с живой иллюстрацией.">
+  <title>Muldash Erzhan — мой цифровой мир</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к странице</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Muldash Erzhan — наверх"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 0h6v6h3v3h6v6h-6v3h-3v6H9v-6H6v-3H0V9h6V6h3z"/></svg><span>Muldash Erzhan<small>ЛИЧНЫЙ ЦИФРОВОЙ МИР</small></span></a>
+      <a class="top-link" href="#about">О странице <span aria-hidden="true">↙</span></a>
+    </header>
+
+    <main id="main">
+      <div class="marquee" aria-label="Muldash Erzhan — мой цифровой мир">
+        <div class="marquee-track" aria-hidden="true"><div class="marquee-group"><span>Muldash Erzhan</span><i>✦</i><span>Muldash Erzhan</span><i>✦</i><span>Muldash Erzhan</span><i>✦</i></div><div class="marquee-group"><span>Muldash Erzhan</span><i>✦</i><span>Muldash Erzhan</span><i>✦</i><span>Muldash Erzhan</span><i>✦</i></div></div>
+      </div>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-square" aria-hidden="true"></span> ВЫ В МОЁМ МИРЕ</p>
+          <h1 id="hero-title">Немного<br>пикселей.<br><span>Много меня.</span></h1>
+          <p class="hero-description">Мой маленький уголок интернета.<br>Здесь синий час длится дольше,<br>а у воображения нет границ.</p>
+          <a class="pixel-button primary" href="#about">ЗАГЛЯНУТЬ ВНУТРЬ <span aria-hidden="true">↓</span></a>
+          <p class="little-note">Устраивайтесь поудобнее <span aria-hidden="true">:)</span></p>
+        </div>
+        <div class="art-column">
+          <div class="scene-window">
+            <div class="window-title"><span class="tiny-squares" aria-hidden="true"><i></i><i></i><i></i></span><span>МЕСТО, ГДЕ ХОРОШО</span><span class="window-mark" aria-hidden="true">✧</span></div>
+            <div class="scene-art" id="scene-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" shape-rendering="crispEdges" role="img" aria-labelledby="scene-title scene-desc">
+  <title id="scene-title">Синий час, восемь бит</title>
+  <desc id="scene-desc">Пиксельная комната со светящимся компьютером и растениями. За широким окном — ночной город, океан, голубая луна и медленно плывущие облака.</desc>
+  <style>
+    .cloud-drift{animation:pixelCloud 18s steps(8,end) infinite}
+    .cloud-drift.cloud-two{animation-duration:24s;animation-delay:-9s}
+    .orbiting-light{animation:pixelStar 5s steps(1,end) infinite}
+    .orbiting-light.star-two{animation-delay:-2s;animation-duration:7s}
+    .screen-cursor{animation:pixelCursor 1.6s steps(1,end) infinite}
+    .island-float{animation:pixelFloat 8s steps(4,end) infinite}
+    .water-glimmer{animation:pixelWater 6s steps(1,end) infinite}
+    .motion-paused .animated{animation-play-state:paused}
+    @keyframes pixelCloud{0%,100%{transform:translateX(-10px)}50%{transform:translateX(30px)}}
+    @keyframes pixelStar{0%,35%,100%{opacity:1}36%,70%{opacity:.25}}
+    @keyframes pixelCursor{0%,49%{opacity:1}50%,100%{opacity:0}}
+    @keyframes pixelFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes pixelWater{0%,49%{opacity:.7}50%,100%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.animated{animation-play-state:paused!important}.motion-enabled .animated{animation-play-state:running!important}}
+  </style>
+
+  <!-- Every contour is drawn on the same ten-pixel grid. -->
+  <path d="M0 0H900V650H0Z" fill="#060a14"/>
+  <path d="M0 0H900V440H0Z" fill="#0c142b"/>
+  <path d="M0 0H900V20H0ZM0 20H20V650H0ZM880 20H900V650H880Z" fill="#152859"/>
+  <path d="M20 20H880V30H20ZM20 30H30V430H20ZM870 30H880V430H870Z" fill="#1b3269"/>
+
+  <!-- A deep window frame, a large blue night, and the far horizon. -->
+  <path d="M90 60H810V70H820V410H810V420H90V410H80V70H90Z" fill="#040915"/>
+  <path d="M90 70H810V410H90Z" fill="#2859bd"/>
+  <path d="M100 80H800V400H100Z" fill="var(--scene-sky,#101e49)"/>
+  <path d="M100 250H800V270H100Z" fill="var(--scene-horizon,#162b63)"/>
+  <path d="M100 270H800V290H100Z" fill="var(--scene-ocean-1,#1b3776)"/>
+  <path d="M100 290H800V310H100Z" fill="var(--scene-ocean-2,#244990)"/>
+  <path d="M100 310H800V400H100Z" fill="var(--scene-ocean-3,#1b3d80)"/>
+  <path d="M100 330H800V340H100ZM100 360H800V370H100ZM100 390H800V400H100Z" fill="#214b98"/>
+
+  <!-- A stepped cyan moon with three small crater marks. -->
+  <g class="island-float animated">
+    <path d="M660 100H710V110H730V120H740V140H750V180H740V200H730V210H710V220H660V210H640V200H630V180H620V140H630V120H640V110H660Z" fill="#66b5db"/>
+    <path d="M660 100H700V110H720V120H730V140H740V170H730V190H720V200H700V210H660V200H640V190H630V140H640V120H650V110H660Z" fill="var(--scene-sun,#b2e4f1)"/>
+    <path d="M660 100H700V110H720V120H680V130H650V150H640V170H630V140H640V120H650V110H660Z" fill="#dcecfb"/>
+    <path d="M690 150H710V160H720V170H710V180H690V170H680V160H690ZM650 180H670V190H650ZM690 120H700V130H690Z" fill="#8ad5ed"/>
+  </g>
+
+  <!-- Sparse star pixels keep the sky calm instead of noisy. -->
+  <g class="stars" fill="#8ad5ed">
+    <path d="M170 110H180V120H170ZM310 100H320V110H310ZM420 140H430V150H420ZM560 110H570V120H560ZM760 250H770V260H760ZM570 220H580V230H570ZM210 240H220V250H210Z"/>
+  </g>
+  <g class="orbiting-light animated" fill="#dcecfb">
+    <path d="M380 190H390V180H400V190H410V200H400V210H390V200H380Z"/>
+    <path d="M590 150H600V140H610V150H620V160H610V170H600V160H590Z"/>
+  </g>
+  <g class="orbiting-light star-two animated" fill="#b2e4f1">
+    <path d="M240 150H250V140H260V150H270V160H260V170H250V160H240Z"/>
+    <path d="M750 110H760V100H770V110H780V120H770V130H760V120H750Z"/>
+  </g>
+
+  <g class="cloud-drift animated">
+    <path d="M150 180H180V170H220V180H250V190H270V210H140V200H130V190H150Z" fill="#24458b"/>
+    <path d="M180 170H220V180H240V190H250V200H150V190H180Z" fill="#396fc5"/>
+    <path d="M180 170H220V180H180ZM150 190H180V200H150Z" fill="#5d94d9"/>
+  </g>
+  <g class="cloud-drift cloud-two animated">
+    <path d="M440 230H470V220H510V230H530V240H550V260H430V250H420V240H440Z" fill="#24458b"/>
+    <path d="M470 220H510V230H530V240H540V250H440V240H470Z" fill="#396fc5"/>
+    <path d="M470 220H510V230H470ZM440 240H470V250H440Z" fill="#5d94d9"/>
+  </g>
+
+  <!-- Dark city silhouettes border an opening onto the water. -->
+  <path d="M100 280H120V230H160V220H170V230H190V300H210V260H240V250H250V260H270V300H290V280H320V310H100Z" fill="#081127"/>
+  <path d="M120 240H160V300H120ZM220 270H260V310H220Z" fill="#122956"/>
+  <path d="M610 300H630V270H650V280H670V240H690V230H710V240H720V290H740V260H770V270H800V310H610Z" fill="#081127"/>
+  <path d="M680 250H710V310H680ZM750 280H780V310H750Z" fill="#122956"/>
+  <path d="M130 250H140V260H130ZM150 270H160V280H150ZM130 290H140V300H130ZM230 280H240V290H230ZM250 300H260V310H250ZM680 260H690V270H680ZM700 280H710V290H700ZM750 290H760V300H750ZM770 280H780V290H770Z" fill="#76bbdf"/>
+  <path d="M180 290H190V300H180ZM280 300H290V310H280ZM640 290H650V300H640ZM730 300H740V310H730Z" fill="#2859bd"/>
+
+  <!-- Broken horizontal pixels are the moon's reflection. -->
+  <g class="water-glimmer animated" fill="#5d94d9">
+    <path d="M650 310H710V320H650ZM630 330H680V340H630ZM700 330H730V340H700ZM650 350H720V360H650ZM620 370H660V380H620ZM680 370H740V380H680ZM650 390H710V400H650Z"/>
+    <path d="M310 320H340V330H310ZM380 350H430V360H380ZM160 360H200V370H160ZM280 380H310V390H280ZM520 330H550V340H520ZM470 380H510V390H470Z" fill="#3265b0"/>
+  </g>
+  <path d="M660 310H700V320H660ZM670 350H700V360H670ZM690 370H710V380H690Z" fill="#8ad5ed" opacity=".75"/>
+  <path d="M100 400H800V410H100Z" fill="#397bce"/>
+  <path d="M80 410H820V420H80ZM70 420H830V430H70Z" fill="#234a95"/>
+  <path d="M70 430H830V440H70Z" fill="#040915"/>
+  <path d="M110 420H780V430H110Z" fill="#4a86d1"/>
+
+  <!-- Room shadows and a solid, quiet foreground. -->
+  <path d="M30 450H870V650H30Z" fill="#080e1c"/>
+  <path d="M40 460H80V470H40ZM820 460H860V470H820ZM60 590H130V600H60ZM770 590H840V600H770Z" fill="#132a59"/>
+  <path d="M170 600H750V620H170Z" fill="#040915"/>
+  <path d="M200 620H720V630H200Z" fill="#102449"/>
+
+  <!-- A substantial pixel desk, with blue edging on its front. -->
+  <path d="M100 480H800V490H810V520H790V530H110V520H90V490H100Z" fill="#040915"/>
+  <path d="M100 480H800V500H100Z" fill="#2859bd"/>
+  <path d="M110 480H790V490H110Z" fill="#5d94d9"/>
+  <path d="M100 500H800V510H100Z" fill="#1e438d"/>
+  <path d="M110 510H790V520H110Z" fill="#142f68"/>
+  <path d="M130 520H170V600H160V610H130ZM730 520H770V610H740V600H730Z" fill="#17346c"/>
+  <path d="M130 520H140V600H130ZM730 520H740V600H730Z" fill="#2e5ca8"/>
+  <path d="M140 600H170V610H140ZM740 600H770V610H740Z" fill="#040915"/>
+
+  <!-- The monitor's screen holds a tiny imagined blue landscape. -->
+  <path d="M310 340H560V350H570V470H560V480H310V470H300V350H310Z" fill="#040915"/>
+  <path d="M310 350H560V460H310Z" fill="#4387d0"/>
+  <path d="M320 360H550V450H320Z" fill="#152f68"/>
+  <path d="M320 360H550V370H320ZM320 370H330V450H320Z" fill="#245699"/>
+  <path d="M330 380H340V390H330ZM410 370H420V380H410ZM500 390H510V400H500Z" fill="#8ad5ed"/>
+  <path d="M470 380H490V390H500V410H490V420H470V410H460V390H470Z" fill="#b2e4f1"/>
+  <path d="M320 430H340V420H360V410H380V400H400V410H420V430H450V420H470V430H500V420H520V430H550V450H320Z" fill="#396fc5"/>
+  <path d="M340 430H370V420H390V430H420V440H450V430H480V440H510V430H540V450H340Z" fill="#5d94d9"/>
+  <path d="M370 420H390V430H370ZM510 430H530V440H510Z" fill="#8ad5ed"/>
+  <path d="M330 440H540V450H330Z" fill="#2862ac"/>
+  <path d="M340 440H380V450H340ZM440 440H470V450H440Z" fill="#8ad5ed" opacity=".65"/>
+  <path d="M310 460H560V470H310Z" fill="#214991"/>
+  <path d="M420 470H450V480H420Z" fill="#8ad5ed"/>
+  <path d="M420 480H450V490H470V500H400V490H420Z" fill="#17346c"/>
+  <path d="M410 490H450V500H410Z" fill="#396fc5"/>
+  <path d="M320 360H550V370H320Z" fill="#8ad5ed" opacity=".2"/>
+  <path class="screen-cursor animated" d="M530 430H540V440H530Z" fill="#dcecfb"/>
+
+  <!-- Keyboard, a cup, and a notebook are drawn in readable little pixels. -->
+  <path d="M350 500H530V510H550V520H340V510H350Z" fill="#091831"/>
+  <path d="M360 500H520V510H360Z" fill="#3265b0"/>
+  <path d="M360 500H380V510H360ZM390 500H410V510H390ZM420 500H440V510H420ZM450 500H470V510H450ZM480 500H500V510H480ZM510 500H520V510H510Z" fill="#8ad5ed"/>
+  <path d="M350 510H530V520H350Z" fill="#1b3d80"/>
+  <path d="M580 490H610V500H620V510H580Z" fill="#091831"/>
+  <path d="M590 490H610V500H590Z" fill="#5d94d9"/>
+  <path d="M220 450H260V460H280V470H270V480H250V490H230V480H220Z" fill="#040915"/>
+  <path d="M220 450H260V480H250V490H230V480H220Z" fill="#5d94d9"/>
+  <path d="M230 460H240V480H230Z" fill="#8ad5ed"/>
+  <path d="M260 460H270V470H260Z" fill="#1c3d7a"/>
+  <path d="M230 450H250V460H230Z" fill="#152f68"/>
+  <path d="M240 420H250V430H240ZM230 430H240V440H230Z" fill="#76bbdf" opacity=".6"/>
+  <path d="M170 500H290V510H300V520H170Z" fill="#102449"/>
+  <path d="M170 490H280V500H290V510H170Z" fill="#396fc5"/>
+  <path d="M170 490H180V510H170Z" fill="#8ad5ed"/>
+  <path d="M200 490H270V500H200Z" fill="#5d94d9"/>
+
+  <!-- A small succulent and a tall plant balance the screen. -->
+  <path d="M650 450H690V480H680V490H660V480H650Z" fill="#040915"/>
+  <path d="M650 450H690V460H650ZM660 460H690V480H680V490H660Z" fill="#2859bd"/>
+  <path d="M650 450H660V470H650ZM660 480H670V490H660Z" fill="#5d94d9"/>
+  <path d="M660 430H670V410H680V440H690V420H700V440H690V450H660V440H650V420H660Z" fill="#4aa8cb"/>
+  <path d="M670 410H680V440H670ZM650 420H660V430H650ZM690 420H700V430H690Z" fill="#8ad5ed"/>
+  <path d="M670 440H680V450H670Z" fill="#1c5e96"/>
+  <path d="M730 460H770V500H760V510H740V500H730Z" fill="#040915"/>
+  <path d="M730 460H770V470H730ZM740 470H770V500H760V510H740Z" fill="#234a95"/>
+  <path d="M730 470H740V490H730ZM740 500H750V510H740Z" fill="#5d94d9"/>
+  <path d="M750 460V370H760V460Z" fill="#2859bd"/>
+  <path d="M740 380H750V370H770V380H780V400H770V410H760V400H750V390H740ZM750 430H740V420H720V410H710V390H730V400H740V410H750ZM760 450H770V430H780V420H800V440H790V450H780V460H760Z" fill="#4aa8cb"/>
+  <path d="M760 380H770V400H760ZM720 390H730V410H720ZM780 430H790V440H780Z" fill="#8ad5ed"/>
+  <path d="M740 410H750V420H740ZM770 450H780V460H770Z" fill="#1c5e96"/>
+
+  <!-- A little spill of cyan makes the whole desk feel softly lit. -->
+  <path d="M310 520H570V530H310Z" fill="#2859bd" opacity=".3"/>
+  <path d="M340 540H540V550H340Z" fill="#234a95" opacity=".2"/>
+  <path d="M360 570H530V580H360Z" fill="#17346c" opacity=".4"/>
+  <path d="M60 630H80V640H60ZM820 630H840V640H820Z" fill="#2859bd"/>
+  <path d="M80 630H100V640H80ZM800 630H820V640H800Z" fill="#1b3776"/>
+</svg>
+</div>
+            <div class="window-status"><span>СИНИЙ ЧАС / <span id="scene-label">НОЧЬ</span></span><span class="live-state"><b aria-hidden="true"></b><span id="motion-label">ЖИВОЙ МИР</span></span></div>
+          </div>
+          <div class="art-controls">
+            <div class="mood-control" role="group" aria-label="Освещение иллюстрации"><button type="button" data-mood="night" aria-pressed="true"><span class="moon-icon" aria-hidden="true">☾</span> Ночь</button><button type="button" data-mood="dawn" aria-pressed="false"><span aria-hidden="true">☀</span> Рассвет</button></div>
+            <button class="motion-button" id="motion-toggle" type="button" aria-pressed="false"><span id="motion-icon" aria-hidden="true">Ⅱ</span><span id="motion-button-text">Пауза</span></button>
+          </div>
+          <p class="art-caption">Пиксели тоже умеют мечтать.</p>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="section-marker"><span>01 / ОБ ЭТОМ МЕСТЕ</span><span aria-hidden="true">↓</span></div>
+        <div class="about-grid">
+          <div><p class="eyebrow">ПРИВЕТ, ПУТНИК</p><h2 id="about-title">Не все миры<br>должны быть<br><em>большими.</em></h2></div>
+          <div class="about-story"><p>Иногда достаточно одного окна, нескольких звёзд и любимого оттенка синего.</p><p>Эта страница — маленькая вселенная с ретро-настроением. Можно остаться на минуту, посмотреть на облака и просто выдохнуть.</p><div class="pixel-signature"><span aria-hidden="true">✦</span><span>Muldash Erzhan</span></div></div>
+        </div>
+        <div class="world-strip"><span><i aria-hidden="true">✧</i> ЛЮБОПЫТСТВО</span><span><i aria-hidden="true">▧</i> ВООБРАЖЕНИЕ</span><span><i aria-hidden="true">♡</i> НЕМНОГО МАГИИ</span></div>
+      </section>
+
+      <section class="keep-world" aria-labelledby="keep-title"><div><p class="eyebrow">ДО ВСТРЕЧИ В ЭТОМ МИРЕ</p><h2 id="keep-title">Хорошо, что вы заглянули.</h2></div><button class="pixel-button secondary" type="button" id="copy-link">СКОПИРОВАТЬ ССЫЛКУ <span aria-hidden="true">↗</span></button></section>
+    </main>
+    <footer><span>Muldash Erzhan <span class="footer-star" aria-hidden="true">✦</span> МОЙ ЦИФРОВОЙ МИР</span><span>СДЕЛАНО С ВООБРАЖЕНИЕМ</span></footer>
+  </div>
+  <p id="toast" class="toast" role="status"></p>
+  <dialog id="copy-dialog" aria-labelledby="copy-dialog-title"><h2 id="copy-dialog-title">Ссылка на этот мир</h2><p>Выделите и скопируйте адрес.</p><input type="text" id="manual-link" aria-label="Адрес страницы" readonly><button type="button" id="close-dialog" class="pixel-button primary">ГОТОВО</button></dialog>
+</body>
+</html>
